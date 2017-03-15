@@ -7,7 +7,16 @@
     </a>
   </div>
   <td-layout-manage-list sidenavWidth="450px">
-    <md-toolbar td-sidenav-content class="bgc-white">
+    <md-toolbar td-sidenav-content class="bgc-white sidenav-content-top">
+      <div class="toolbar-closed">
+        <span>Closed (96)</span>
+        <md-icon>keyboard_arrow_down</md-icon>
+      </div>
+      <div class="toolbar-date">
+        <md-icon>date_range</md-icon>
+        <span>Date</span>
+        <md-icon>keyboard_arrow_down</md-icon>
+      </div>
     </md-toolbar>
     <md-nav-list td-sidenav-content>
       <template let-conversation let-last="last" ngFor [ngForOf]="lastConversations">
@@ -30,9 +39,20 @@
         <md-divider *ngIf="!last"></md-divider>
       </template>
     </md-nav-list>
-    <div td-toolbar-content layout="row" layout-align="center center" flex>
-      <span class="tc-blue-700">{{user.name}}</span>
-    </div>
+    <div td-toolbar-content layout="row" class="toolbar-content" layout-align="space-between center" flex>
+        <div class="toolbar-content-user">
+          <img class="answerer-image" src="{{lastConversations[0].img2}}"/>
+          <span>You</span>
+          <md-icon>keyboard_arrow_down</md-icon>
+        </div>
+        <div class="toolbar-content-name">
+          <span class="tc-blue-700">{{user.name}}</span>
+        </div>
+        <div class="toolbar-content-reopen">
+          <md-icon>cloud_upload</md-icon>
+          <span>Reopen</span>
+        </div>
+      </div>
     <div class="messages-chat">
       <div class="messages-wrapper">
         <div class="message-wrapper">
@@ -80,8 +100,8 @@
       </div>
       <div class="message-write-actions">
         <div class="actions">
-          <i class="material-icons">attach_file</i>
-          <i class="material-icons">gif</i>
+          <md-icon>attach_file</md-icon>
+          <md-icon>gif</md-icon>
         </div>
         <button md-button md-primary class="md-button-primary">Send</button>
       </div>
