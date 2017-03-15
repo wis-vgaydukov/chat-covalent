@@ -2,9 +2,40 @@
   border-right: 3px solid #1976d2;
   padding-right: 8px;
 }
-.messages-chat {
+.messages {
+  &-chat {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  &-wrapper {
+    padding-bottom: 30px;
+    &.my-message {
+      display: flex;
+      flex-direction: row-reverse;
+      & > .message-wrapper {
+        padding-left: 0;
+        padding-right: 60px;
+      }
+      & .message-avatar {
+        right: 0;
+        left: initial;
+      }
+      & .message-body {
+        &.arrow:before {
+          left: initial;
+          right: -9px;
+          border-right: initial;
+          border-left: 9px solid #dce3e7;
+        }
+        &.arrow:after {
+          left: initial;
+          right: -7px;
+          border-right: initial;
+          border-left: 7px solid #ffffff;
+        }
+      }
+    }
+  }
 }
 
 .message {
@@ -13,12 +44,12 @@
     display: inline-flex;
     flex-direction: column;
     padding-left: 60px;
-    margin-bottom: 5px;
     max-width: 70%;
     min-width: 30%;
   }
   &-avatar {
     position: absolute;
+    top: 7px;
     left: 0;
     height: 44px;
     width: 44px;
@@ -33,10 +64,10 @@
     background: #edf9ff;
     border: 1px solid #dce3e7;
     border-radius: 5px;
-    &:before {
+    &.arrow:before {
       position: absolute;
       content: "";
-      top: 10px;
+      top: 12px;
       left: -17px;
       display: block;
       width: 0;
@@ -45,10 +76,10 @@
       border: 8px solid transparent;
       border-right: 9px solid #dce3e7;
     }
-    &:after {
+    &.arrow:after {
       content: " ";
       position: absolute;
-      top: 12px;
+      top: 14px;
       left: -13px;
       display: block;
       width: 0;

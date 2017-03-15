@@ -2,7 +2,9 @@
   <div td-toolbar-content layout="row" layout-align="center center" flex>
     <span>Conversations</span>
     <span flex></span>
-    <a md-icon-button mdTooltip="search" href="#" target="_blank"><md-icon>search</md-icon></a>
+    <a md-icon-button mdTooltip="search" href="#" target="_blank">
+      <md-icon>search</md-icon>
+    </a>
   </div>
   <td-layout-manage-list sidenavWidth="450px">
     <md-toolbar td-sidenav-content class="bgc-white">
@@ -30,16 +32,35 @@
       <span class="tc-blue-700">{{user.name}}</span>
     </div>
     <div class="messages-chat" style="background-color: #f0f4f7;">
-      <div class="message-wrapper">
-        <img src="http://placehold.it/44x44" alt="" class="message-avatar">
-        <div class="message-body">
-          <div> 123123 </div>
+      <div class="messages-wrapper">
+        <div class="message-wrapper">
+          <img src="http://placehold.it/44x44" alt="" class="message-avatar">
+          <div class="message-body arrow">
+            <div> 123123</div>
+          </div>
+          <div class="message-body">
+            <div> 123123</div>
+          </div>
+          <div class="message-data">
+            <span class="message-data__action">Sent from</span>
+            <span class="message-data__info">App</span>
+            <span class="message-data__action">, via</span>
+            <span class="message-data__info">Chrome, 5mth ago</span>
+          </div>
         </div>
-        <div class="message-data">
-          <span class="message-data__action">Sent from</span>
-          <span class="message-data__info">App</span>
-          <span class="message-data__action">, via</span>
-          <span class="message-data__info">Chrome, 5mth ago</span>
+      </div>
+      <div class="messages-wrapper my-message">
+        <div class="message-wrapper">
+          <img src="http://placehold.it/44x44" alt="" class="message-avatar">
+          <div class="message-body arrow">
+            <div> 123123</div>
+          </div>
+          <div class="message-data">
+            <span class="message-data__action">Sent from</span>
+            <span class="message-data__info">App</span>
+            <span class="message-data__action">, via</span>
+            <span class="message-data__info">Chrome, 5mth ago</span>
+          </div>
         </div>
       </div>
     </div>
