@@ -8,23 +8,25 @@
     <md-toolbar td-sidenav-content class="bgc-white">
     </md-toolbar>
     <md-nav-list td-sidenav-content>
-      <md-list-item>
-        <md-checkbox md-list-avatar></md-checkbox>
-        <div md-line>
-          <div layout="row" layout-align="center center" flex>
-            <span><img src="assets/images/user_icon1.jpg"/></span>
-            <span>Ennio</span>
-            <span flex></span>
-            <span><md-icon class="tc-grey-500">attach_file</md-icon></span>
-            <span class="tc-grey-500 md-caption">3mth</span>
+      <template let-conversation let-last="last" ngFor [ngForOf]="lastConversations">
+        <md-list-item class="conversation-list">
+          <md-checkbox md-list-avatar></md-checkbox>
+          <div md-line class="answerer-title-wrapper">
+            <div layout="row" layout-align="center center" flex>
+              <span><img class="answerer-image" [src]="conversation.img1"/></span>
+              <span>{{conversation.name}}</span>
+              <span flex></span>
+              <span [hidden]="!conversation.attached"><md-icon class="tc-grey-500" >attach_file</md-icon></span>
+              <span class="tc-grey-500 md-caption">3mth</span>
+            </div>
           </div>
-        </div>
-        <p md-line>
-          <img class="user-sub-icon" src="assets/images/user_icon2.jpg"/>
-          <span>Content/object management views (this page is using manage list)</span>
-        </p>
-      </md-list-item>
-      <md-divider></md-divider>
+          <p md-line class="last-message-wrapper">
+            <img class="user-sub-icon" [src]="conversation.img2" [hidden]="!conversation.img2"/>
+            <span>{{conversation.message}}</span>
+          </p>
+        </md-list-item>
+        <md-divider *ngIf="!last"></md-divider>
+      </template>
     </md-nav-list>
     <div td-toolbar-content layout="row" layout-align="center center" flex>
       <span class="tc-blue-700">{{user.name}}</span>
