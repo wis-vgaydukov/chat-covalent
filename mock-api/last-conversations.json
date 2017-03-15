@@ -1,0 +1,90 @@
+[{
+    "id": "1",
+    "name": "Ennio",
+    "img1": "assets/images/user_icon1.jpg",
+    "img2": "assets/images/user_icon2.jpg",
+    "date": "3mth",
+    "attached": "true",
+    "message": "Content/object management views (this page is using manage list)"
+  }, {
+    "id": "2",
+    "name": "Tesi",
+    "img1": "assets/images/user_icon1.jpg",
+    "img2": "assets/images/user_icon2.jpg",
+    "date": "2mth",
+    "message": "Content/object management views (this page is using manage list)"
+  },
+  {
+    "id": "3",
+    "name": "Abbie",
+    "img1": "assets/images/user_icon1.jpg",
+    "date": "3mth",
+    "attached": "true",
+    "message": "Content/object management views (this page is using manage list)"
+  }, {
+    "id": "4",
+    "name": "Ennio",
+    "img1": "assets/images/user_icon1.jpg",
+    "img2": "assets/images/user_icon2.jpg",
+    "date": "3mth",
+    "message": "Content/object management views (this page is using manage list)"
+  }, {
+    "id": "5",
+    "name": "Ennio",
+    "img1": "assets/images/user_icon1.jpg",
+    "img2": "assets/images/user_icon2.jpg",
+    "date": "3mth",
+    "message": "Content/object management views (this page is using manage list)"
+  }, {
+    "id": "6",
+    "name": "Ennio",
+    "img1": "assets/images/user_icon1.jpg",
+    "img2": "assets/images/user_icon2.jpg",
+    "date": "3mth",
+    "attached": "true",
+    "message": "Content/object management views (this page is using manage list)"
+  }, {
+    "id": "7",
+    "name": "Ennio",
+    "img1": "assets/images/user_icon1.jpg",
+    "img2": "assets/images/user_icon2.jpg",
+    "date": "3mth",
+    "message": "Content/object management views (this page is using manage list)"
+  }, {
+    "id": "8",
+    "name": "Ennio",
+    "img1": "assets/images/user_icon1.jpg",
+    "img2": "assets/images/user_icon2.jpg",
+    "date": "3mth",
+    "message": "Content/object management views (this page is using manage list)"
+  }, {
+    "id": "9",
+    "name": "Ennio",
+    "img1": "assets/images/user_icon1.jpg",
+    "img2": "assets/images/user_icon2.jpg",
+    "date": "3mth",
+    "attached": "true",
+    "message": "Content/object management views (this page is using manage list)"
+  }, {
+    "id": "10",
+    "name": "Ennio",
+    "img1": "assets/images/user_icon1.jpg",
+    "img2": "assets/images/user_icon2.jpg",
+    "date": "3mth",
+    "message": "Content/object management views (this page is using manage list)"
+  }, {
+    "id": "11",
+    "name": "Ennio",
+    "img1": "assets/images/user_icon1.jpg",
+    "img2": "assets/images/user_icon2.jpg",
+    "date": "3mth",
+    "message": "Content/object management views (this page is using manage list)"
+  }, {
+    "id": "12",
+    "name": "Ennio",
+    "img1": "assets/images/user_icon1.jpg",
+    "img2": "assets/images/user_icon2.jpg",
+    "date": "3mth",
+    "message": "Content/object management views (this page is using manage list)"
+  }
+]
