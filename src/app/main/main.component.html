@@ -8,15 +8,19 @@
   </div>
   <td-layout-manage-list sidenavWidth="450px">
     <md-toolbar td-sidenav-content class="bgc-white sidenav-content-top">
-      <div class="toolbar-closed">
-        <span>Closed (96)</span>
-        <md-icon>keyboard_arrow_down</md-icon>
-      </div>
-      <div class="toolbar-date">
+      <md-select [(ngModel)]="selectedConvGroupValue" class="size-width-128">
+        <md-option *ngFor="let item of convGroupMenu" [value]="item.value">{{item.name}} ({{item.count}})</md-option>
+      </md-select>
+      <md-menu #convDateMenu="mdMenu">
+        <button md-menu-item (click)="selectConvDateMenuItem('Today')">Today</button>
+        <button md-menu-item (click)="selectConvDateMenuItem('Yesterday')">Yesterday</button>
+        <button md-menu-item (click)="selectConvDateMenuItem('Month ago')">Month ago</button>
+      </md-menu>
+      <button md-button [mdMenuTriggerFor]="convDateMenu">
         <md-icon>date_range</md-icon>
         <span>Date</span>
         <md-icon>keyboard_arrow_down</md-icon>
-      </div>
+      </button>
     </md-toolbar>
     <md-nav-list td-sidenav-content>
       <template let-conversation let-last="last" ngFor [ngForOf]="lastConversations">

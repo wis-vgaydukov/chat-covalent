@@ -1,0 +1,13 @@
+[{
+  "value": "closed",
+  "name": "Closed",
+  "count": 96
+}, {
+  "value": "reopened",
+  "name": "Reopened",
+  "count": 9
+}, {
+  "value": "opened",
+  "name": "Opened",
+  "count": 12
+}]

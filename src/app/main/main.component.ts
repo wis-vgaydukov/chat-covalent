@@ -2,6 +2,26 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 
 const lastConversations = require('../../../mock-api/last-conversations.json');
+const convGroupMenu = require('../../../mock-api/conv-group-menu.json');
+
+const convDateMenu = [
+  {
+    value: 'today',
+    viewValue: 'Today'
+  }, {
+    value: 'yesterday',
+    viewValue: 'Yesterday'
+  }, {
+    value: 'month ago',
+    viewValue: 'Month ago'
+  }
+];
+
+interface IConvGroupItem {
+  value: string;
+  name: string;
+  count: number
+}
 
 @Component({
   selector: 'qs-main',
@@ -12,6 +32,12 @@ const lastConversations = require('../../../mock-api/last-conversations.json');
 export class MainComponent {
   public user = { name: 'Michael' };
   public lastConversations = lastConversations;
+  public convGroupMenu: IConvGroupItem[] = convGroupMenu;
+  public selectedConvGroupValue = 'closed';
 
   constructor() { }
+
+  public selectConvDateMenuItem(value: string) {
+    console.log('value -> ', value);
+  }
 }
