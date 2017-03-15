@@ -1,7 +1,31 @@
-<td-layout-nav toolbarTitle="Conversations">
-  <td-layout-manage-list>
+<td-layout-nav>
+  <div td-toolbar-content layout="row" layout-align="center center" flex>
+    <span>Conversations</span>
+    <span flex></span>
+    <a md-icon-button mdTooltip="search" href="#" target="_blank"><md-icon>search</md-icon></a>
+  </div>
+  <td-layout-manage-list sidenavWidth="450px">
     <md-toolbar td-sidenav-content class="bgc-white">
     </md-toolbar>
+    <md-nav-list td-sidenav-content>
+      <md-list-item>
+        <md-checkbox md-list-avatar></md-checkbox>
+        <div md-line>
+          <div layout="row" layout-align="center center" flex>
+            <span><img src="assets/images/user_icon1.jpg"/></span>
+            <span>Ennio</span>
+            <span flex></span>
+            <span><md-icon class="tc-grey-500">attach_file</md-icon></span>
+            <span class="tc-grey-500 md-caption">3mth</span>
+          </div>
+        </div>
+        <p md-line>
+          <img class="user-sub-icon" src="assets/images/user_icon2.jpg"/>
+          <span>Content/object management views (this page is using manage list)</span>
+        </p>
+      </md-list-item>
+      <md-divider></md-divider>
+    </md-nav-list>
     <div td-toolbar-content layout="row" layout-align="center center" flex>
       <span class="tc-blue-700">{{user.name}}</span>
     </div>
