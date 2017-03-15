@@ -31,7 +31,7 @@
     <div td-toolbar-content layout="row" layout-align="center center" flex>
       <span class="tc-blue-700">{{user.name}}</span>
     </div>
-    <div class="messages-chat" style="background-color: #f0f4f7;">
+    <div class="messages-chat">
       <div class="messages-wrapper">
         <div class="message-wrapper">
           <img src="http://placehold.it/44x44" alt="" class="message-avatar">
@@ -61,6 +61,26 @@
             <span class="message-data__action">, via</span>
             <span class="message-data__info">Chrome, 5mth ago</span>
           </div>
+        </div>
+      </div>
+      <div class="message-write-wrapper">
+        <div class="message-write-header">
+          <div class="message-write-header__tab">
+            Reply
+          </div>
+          <div class="message-write-help">
+            <i class="material-icons">help</i>
+          </div>
+        </div>
+        <div class="message-write-textarea">
+          <textarea rows="3" placeholder="write message"></textarea>
+        </div>
+        <div class="message-write-actions">
+          <div class="actions">
+            <i class="material-icons">attach_file</i>
+            <i class="material-icons">gif</i>
+          </div>
+          <button md-button md-primary class="md-button-primary">Send</button>
         </div>
       </div>
     </div>

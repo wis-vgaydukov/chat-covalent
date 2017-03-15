@@ -6,6 +6,8 @@
   &-chat {
     padding-left: 10px;
     padding-right: 10px;
+    background-color: #f0f4f7;
+    min-height: 100%;
   }
   &-wrapper {
     padding-bottom: 30px;
@@ -96,4 +98,56 @@
       font-weight: 700;
     }
   }
+  &-write {
+    &-wrapper {
+      overflow: hidden;
+      border-radius: 5px;
+      border: 1px solid #dce3e7;
+      background: #edf9ff;
+      color: #aec9d6;
+    }
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #dce3e7;
+    }
+    &-header {
+      padding: 5px 10px 5px;
+      &__tab {
+        position: relative;
+        &:before {
+          position: absolute;
+          content: "";
+          width: 100%;
+          bottom: -10px;
+          border-bottom:2px solid #aec9d6;
+        }
+      }
+    }
+    &-help {
+
+    }
+    &-textarea {
+      padding: 15px 10px 10px;
+      & textarea{
+        width: 100%;
+        border: none;
+        resize: none;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    &-actions {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+  }
+}
+
+.md-button-primary {
+  background-color: #0d66c7;
+  color: #fff;
 }
